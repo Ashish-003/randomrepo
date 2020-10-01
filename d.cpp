@@ -38,23 +38,15 @@ int main()
 	cin >> t;
 	while(t--)
 	{
-		//binary search 
+		//binary search using inblt
 		ll n,x;
 		cin>>n>>x;
 		ll a[n];
 		lp(i,0,n-1)
 		cin>>a[i];
 		sort(a,a+n);
-		ll mi=0, ma=n,m;
-		while(mi<=ma){
-			m=(mi+ma)/2;
-			if(a[m]<x)
-				mi=m+1;
-			else
-				ma=m-1;
-		}
-		cout<<a[m]<<endl;
-
+		ll temp=upper_bound(a,a+n,x)-a;
+		cout<<a[temp]<<endl;
 	}
 	return 0;	
 }
