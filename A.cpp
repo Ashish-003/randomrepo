@@ -38,9 +38,14 @@ int main()
 	cin >> tt;
 	while(tt--)
 	{
-		ll n;
-		cin >> n;
-		cout << pow(2,n)-1 << endl;
+		
+			// a^b%m for large values of a and b
+			ll a,b;
+			cin>>a>>b;
+			ll res;
+			res=modu(a,b);
+			cout<<res<<endl;
+	
 	}
 	return 0;	
 }
