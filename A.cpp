@@ -40,7 +40,7 @@ int main()
 	{
 		ll n;
 		cin >> n;
-		cout << 2*n-1 << endl;
+		cout << pow(2,n)-1 << endl;
 	}
 	return 0;	
 }
